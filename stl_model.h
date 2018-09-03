@@ -46,6 +46,11 @@ private:
     std::vector<Triangle> facets;
 
 public:
+    STLModel(std::vector<Triangle> f) {
+        name = "";
+        facets = f;
+    }
+
     STLModel(std::string n, std::vector<Triangle> f) {
         name = n;
         facets = f;
