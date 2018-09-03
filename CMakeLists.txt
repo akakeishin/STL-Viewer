@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 17)
 link_libraries(${GLFW_LIBRARY_DIRS})
 set(CMAKE_CXX_FLAGS "-O2 -lglfw -lGLEW -framework OpenGL -framework CoreVideo -framework IOKit -framework Cocoa")
 
-add_executable(STLViewer main.cpp)
+add_executable(STLViewer main.cpp stl_model.cpp stl_model.h)
