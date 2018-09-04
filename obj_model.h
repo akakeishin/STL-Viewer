@@ -30,7 +30,7 @@ private:
     Vec3d _points[3];
 
 public:
-    Triangle(Vec3d normal, Vec3d points[3]) {
+    Triangle(Vec3d& normal, Vec3d& points[3]) {
         _normal = normal;
         *_points = *points;
     }
@@ -44,12 +44,12 @@ private:
     std::vector<Triangle> _facets;
 
 public:
-    OBJModel(std::vector<Triangle> f) {
+    OBJModel(std::vector<Triangle>& f) {
         _name = "";
         _facets = f;
     }
 
-    OBJModel(std::string n, std::vector<Triangle> f) {
+    OBJModel(std::string n, std::vector<Triangle>& f) {
         _name = n;
         _facets = f;
     }
