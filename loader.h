@@ -1,8 +1,11 @@
-//
-// Created by Hiroki Tanaka on 2018/09/04.
-//
-
 #ifndef STLVIEWER_LOADER_H
 #define STLVIEWER_LOADER_H
+
+#include "obj_model.h"
+#include <string>
+#include <fstream>
+#include <iostream>
+
+OBJModel loadModel(std::string filePath);
 
 #endif //STLVIEWER_LOADER_H
